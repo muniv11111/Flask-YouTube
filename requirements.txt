@@ -1,0 +1,6 @@
+requests==2.25.0
+bs4==4.9.3
+Flask==1.1.2
+gunicorn==19.10.0
+youtube-dl==2020.12.14
+lxml==4.6.2
