@@ -23,15 +23,15 @@ def return_file():
 
     if num_choice == 1:
         filename_formatted = filename + ".mp3"
-        location = "media/Audio downloads/{}.mp3".format(session.get("id"))
+        location = "/tmp/{}.mp3".format(session.get("id"))
 
     if num_choice == 2:
         filename_formatted = filename + ".mp4"
-        location = "media/Video downloads/{}.mp4".format(session.get("id"))
+        location = "/tmp/{}.mp4".format(session.get("id"))
 
     if num_choice == 3 or num_choice == 4:
         filename_formatted = filename + ".zip"
-        location = "media/{}.zip".format(session.get("id"))
+        location = "/tmp/{}.zip".format(session.get("id"))
 
     return send_file(
         location, attachment_filename=filename_formatted, as_attachment=True
